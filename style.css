@@ -1,0 +1,763 @@
+@font-face {
+    font-family: "Dosis-Medium";
+    src: url(./fonts/Dosis-Medium.ttf);
+}
+@font-face {
+    font-family: "Dosis-Semibold";
+    src: url(./fonts/Dosis-Semibold.ttf);
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: "Dosis-Regular";
+    src: url(./fonts/Dosis-Regular.ttf);
+}
+body{
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url(./img/bg_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin: 0;
+}
+.container{
+    position: relative;
+    width: 95%;
+    max-width: 1145px;
+    margin: 0 auto;
+}
+.container-fluid{
+    position: relative;
+    width: 95%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.menu{
+    width: 987px;
+    display: flex;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 149px;
+}
+.menu-logo{
+    width: 124px;
+    height: 40px;
+    font-family: "Dosis-Semibold";
+    font-size: 36px;
+    line-height: 0.67;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-nav{
+    min-width: 441px;
+    height: 35px;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-nav_item{
+    color: white;
+    transition: 1.5s all;
+}
+.menu-nav_item:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 133px;
+    height: 35px;
+    border-radius: 17.5px;
+    background-color: #ffffff;
+    color: black;
+}
+.descr{
+    height: 362px;
+    width: 490px;
+    text-align: left;
+}
+.descr_header{
+    font-family: "Dosis-Semibold";
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.11;
+    color: #ffffff;
+}
+.descr_text{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #ffffff;
+}
+.descr_opt{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+.descr_opt-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.descr_opt-item:before{
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    color: #fd712c;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15px;
+    top: 5px;
+    left: -40px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.descr_btn{
+    width: 192px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+    border: solid 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.14;
+    text-align: center;
+    color: #222222;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.descr_btn:hover{
+    background-color: black;
+    color: white;
+}
+.props{
+    height: 462px;
+}
+.blocks{
+    height: 272px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.blocks-item{
+    width: 356px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+}
+.blocks-item_pic{
+    width: 70px;
+    height: 70px;
+    border: solid 1px #eeeeee;
+    background-color: #f7fafc;
+    border-radius: 50%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f31f79;
+    font-size: 24px;
+}
+.blocks-item_text{
+    height: 83px;
+    max-width: 256px;
+}
+.blocks-item_text-header{
+    font-family: "Dosis-Medium";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #222222;
+}
+.blocks-item_text-descr{
+    font-family: "Roboto-Light";
+    width: 257px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #777777;
+}
+hr{
+    width: 1140px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+.phone{
+    height: 709px;
+}
+.phone_main{
+    display: flex;
+    align-items: center;
+    padding-top: 112px;
+}
+.phone_main-text{
+    height: 436px;
+    width: 512px;
+}
+.phone_main-text-header{
+    font-family: "Dosis-Medium";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.83;
+    text-align: left;
+    color: #222222;
+    padding-bottom: 11px;
+}
+.phone_main-text-text{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: left;
+    color: #777777;
+}
+.phone_main-text-text:nth-of-type(1){
+    margin-bottom: 65px;
+}
+.phone_main-text-list{
+    margin-top: 23px;
+    list-style-type: none;
+}
+.phone_main-text-list-item{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: #777777;
+    padding-bottom: 20px;
+    position: relative;
+}
+.phone_main-text-list-item:before{
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15px;
+    top: 5px;
+    left: -40px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+.screens{
+    height: 917px;
+    background-color: #f7fafc;
+}
+.screens_text{
+    width: 656px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 119px;
+}
+.screens_text-header{
+    font-family: "Dosis-Medium";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.83;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 17px;
+}
+.screens_text-descr{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: #777777;
+}
+.screens_slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+}
+.screens_slider-item{
+    width: 360px;
+    height: 500px;
+}
+.prices{
+    height: 900px;
+}
+.prices_text{
+    height: 100px;
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 120px;
+    margin-bottom: 65px;
+}
+.prices_text-header{
+    font-family: "Dosis-Medium";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.83;
+    text-align: center;
+    color: #222222;
+    padding-bottom: 11px;
+}
+.prices_text-descr{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: #777777;
+}
+.prices_blocks{
+    height: 485px;
+    display: flex;
+    justify-content: space-between;
+}
+.prices_blocks-item{
+    height: 485px;
+    width: 265px;
+    background-color: #f7fafc;
+    transition: 1s all;
+}
+.prices_blocks-item-header{
+    font-family: "Dosis-Regular";
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+    padding-top: 15px;
+}
+.prices_blocks-item-price{
+    font-family: "Dosis-Medium";
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 0.5;
+    text-align: center;
+    color: #333333;
+    width: 265px;
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 29px 0;
+    transition: 1s all;
+}
+.active{
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    color: white;
+}
+.prices_blocks-item-active{
+    background-color: white;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-active{
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+    color: white;
+}
+.prices_blocks-item:hover{
+    background-color: white;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.prices_blocks-item:hover .prices_blocks-item-price{
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    color: white;
+}
+.prices_blocks-item:hover .prices_blocks-item-btn{
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+    color: white;
+}
+.prices_blocks-item-opt{
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.prices_blocks-item-opt-item{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.14;
+    text-align: center;
+    color: #777777;
+}
+.prices_blocks-item-buy{
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prices_blocks-item-start{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: #aaaaaa;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+.prices_blocks-item-btn{
+    width: 139px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s all;
+}
+.mini_let{
+    font-family: "Dosis-Medium";
+    font-size: 18px;
+}
+.video{
+    height: 400px;
+    background-image: url(./img/Overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-img{
+    cursor: pointer;
+}
+.response{
+    height: 690px;
+}
+.response_text{
+    margin: 0 auto;
+    padding-top: 119px;
+}
+.response_text-header{
+    font-family: "Dosis-Medium";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.83;
+    text-align: center;
+    color: #222222;
+    padding-bottom: 23px;
+}
+.response_text-text{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: #777777;
+}
+.response_blocks{
+    width: 1320px;
+    height: 275px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    position: relative;
+}
+
+.response_blocks-item{
+    width: 360px;
+    height: 273px;
+    background-color: #f7fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s all;
+}
+.response_blocks-item-active{
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.response_blocks-item:hover{
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.response_blocks-descr{
+    font-family: "Roboto-Light";
+    width: 268px;
+    height: 84px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: left;
+    color: #777777;
+}
+.response_blocks-item-user{
+    height: 80px;
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.response_blocks-item-user-name-name{
+    font-family: "Dosis-Regular";
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #222222;
+    font-weight: bold;
+}
+.response_blocks-item-user-name-company{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: left;
+    color: #777777;
+}
+.arrow-left, .arrow-right{
+    width: 40px;
+    height: 40px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.5s all;
+}
+.arrow-left{
+    left: 0;
+    top: 113px;
+}
+.arrow-right{
+    right: 0;
+    top: 113px;
+}
+.arrow-left:hover, .arrow-right:hover{
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    border: solid 3px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+    color: white;
+    border: none;
+}
+.download{
+    height: 471px;
+    background-image: linear-gradient(to right, #fd712c, #f21780);
+}
+.download-header{
+    font-family: "Dosis-Regular";
+    font-size: 36px;
+    line-height: 0.67;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top: 119px;
+    padding-bottom: 80px;
+}
+.download-blocks{
+    width: 1170px;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+}
+.dowload-blocks_items{
+    width: 360px;
+    height: 115px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.download-blocks_items-item{
+    max-width: 195px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.download-blocks_items-item-name{
+    font-family: "Dosis-Semibold";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 0.8;
+    text-align: left;
+    color: #222222;
+    margin: 0;
+}
+.download-blocks_items-item-company{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: left;
+    color: #777777;
+    margin: 0;
+}
+footer{
+    height: 180px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width: 154px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.icons:nth-child(3){
+    color:#f31f79;
+}
+.footer-text{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 31px;
+}
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 1023px;
+    }
+    .container-fluid{
+        max-width: 1023px;
+    }
+    .phone_main-text-text:nth-of-type(1) {
+        margin-bottom: 13px
+    }
+    .screens_slider-item {
+        width: 300px;
+    }
+    .prices_blocks-item{
+        width: 240px;
+    }
+    .prices_blocks-item-price{
+        width: 240px;
+    }
+    .active{
+        width: 240px;
+    }
+    .prices_blocks-item-price:hover{
+        width: 240px;
+    }
+    .response_blocks{
+        width: 980px;
+        display: flex;
+        justify-content: unset;
+    }
+    .response_blocks-item {
+        width: 300px;
+    }
+    .arrow-right,.arrow-left{
+        display: none;
+    }
+    .download-blocks{
+        width: 980px;
+        justify-content: unset;
+    }
+    hr{
+        width: 980px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 767px;
+    }
+    .container-fluid{
+        max-width: 767px;
+    }
+    .menu{
+        width: 730px;
+    }
+    .menu-nav{
+        min-width: 344px;
+    }
+    hr{
+        width: 500px;
+    }
+    .phone_main-pic{
+        width: 300px;
+    }
+    .phone_main-text-text:nth-of-type(1) {
+        margin-bottom: 13px
+    }
+    .screens_slider:nth-child(3){
+        display: none;
+    }
+    .screens_slider-item {
+        width: 300px;
+    }
+    .prices_blocks-item{
+        width: 150px;
+    }
+    .prices_blocks-item-price{
+        width: 150px;
+    }
+    .active{
+        width: 150px;
+    }
+    .prices_blocks-item-price:hover{
+        width: 150px;
+    }
+    .response_blocks{
+        width: 700px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .response_blocks-item {
+        width: 300px;
+    }
+    .response_blocks-item:last-of-type{
+        display: none;
+    }
+    .arrow-right,.arrow-left{
+        display: none;
+    }
+    .download-blocks{
+        width: 700px;
+        justify-content: unset;
+    }
+    
+}
